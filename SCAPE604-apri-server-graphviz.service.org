@@ -1,0 +1,9 @@
+[Unit]
+Desription=SCAPE604-apri-server-graphviz - start or restart apri-server-graphviz service, respawn
+After=network.target
+[Service]
+ExecStart=/opt/SCAPE604/apri-server-graphviz/apri-server-graphviz.sh /opt/SCAPE604/log/SCAPE604-apri-server-graphviz.log
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
